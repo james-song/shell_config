@@ -1,4 +1,3 @@
 #!/bin/sh
-mv "$HOME/.bash_profile" "`pwd`/bash_profile_backup"
-ln -s "`pwd`/bash_profile" "$HOME/.bash_profile"
-
+mv "$HOME/.zshrc" "`pwd`/zshrc_backup"
+ln -s "`pwd`/zshrc" "$HOME/.zshrc"
