@@ -87,10 +87,6 @@ source $ZSH/oh-my-zsh.sh
 # pyenv settings
 eval "$(pyenv init -)"
 
-# virtualenv settings
-export WORKON_HOME=$HOME/.virtualenvs
-source /usr/local/bin/virtualenvwrapper.sh
-
 # useful short key
 alias ll="ls -alF"
 alias gl="git log"
