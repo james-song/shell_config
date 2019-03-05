@@ -104,16 +104,9 @@ alias egrep='egrep --color=auto'
 # history with timestamp
 export HISTTIMEFORMAT="%F %T "
 
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
-
 export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin"
 
 autoload -U promptinit; promptinit
 prompt pure
 
-###-tns-completion-start-###
-if [ -f ~/.tnsrc ]; then 
-    source ~/.tnsrc 
-fi
-###-tns-completion-end-###
+eval "$(rbenv init -)"
