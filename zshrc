@@ -86,7 +86,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # pyenv settings
-eval "$(pyenv init -)"
+#eval "$(pyenv init -)"
 
 # useful short key
 alias ll="ls -alF"
@@ -104,9 +104,20 @@ alias egrep='egrep --color=auto'
 # history with timestamp
 export HISTTIMEFORMAT="%F %T "
 
-export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin"
+export ANDROID_HOME="/Users/reeoss/Library/Android/sdk"
+export PATH="$PATH:$ANDROID_HOME/platform-tools"
+export GOPATH="$HOME/work/go"
+export PATH="$PATH:$GOPATH/bin"
 
 autoload -U promptinit; promptinit
 prompt pure
 
 eval "$(rbenv init -)"
+
+###-tns-completion-start-###
+if [ -f /Users/reeoss/.tnsrc ]; then 
+    source /Users/reeoss/.tnsrc 
+fi
+###-tns-completion-end-###
+
+autoload -U +X bashcompinit && bashcompinit
