@@ -104,6 +104,7 @@ alias egrep='egrep --color=auto'
 # history with timestamp
 export HISTTIMEFORMAT="%F %T "
 
+export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin"
 export ANDROID_HOME="/Users/reeoss/Library/Android/sdk"
 export PATH="$PATH:$ANDROID_HOME/platform-tools"
 export GOPATH="$HOME/work/go"
