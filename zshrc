@@ -86,7 +86,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # pyenv settings
-#eval "$(pyenv init -)"
+eval "$(pyenv init -)"
 
 # useful short key
 alias ll="ls -alF"
