@@ -110,15 +110,13 @@ export PATH="$PATH:$ANDROID_HOME/platform-tools"
 export GOPATH="$HOME/work/go"
 export PATH="$PATH:$GOPATH/bin"
 
+# java env settings
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
+
 autoload -U promptinit; promptinit
 prompt pure
 
-eval "$(rbenv init -)"
-
-###-tns-completion-start-###
-if [ -f /Users/reeoss/.tnsrc ]; then 
-    source /Users/reeoss/.tnsrc 
-fi
-###-tns-completion-end-###
+#eval "$(rbenv init -)"
 
 autoload -U +X bashcompinit && bashcompinit
