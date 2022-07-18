@@ -111,7 +111,6 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 eval "$(pyenv init -)"
 
 ## java env settings
-export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
 
 ## node env settings
@@ -126,3 +125,5 @@ alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
+## Load Angular CLI autocompletion.
+source <(ng completion script)
