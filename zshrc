@@ -117,9 +117,12 @@ eval "$(jenv init -)"
 ## node env settings
 eval "$(nodenv init -)"
 
+## psql cli path
+export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin"
+
 ## useful short key
 alias gs="git status"
-
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
+
