@@ -110,7 +110,6 @@ export ANDROID_SDK_ROOT=$ANDROID_HOME
 export PATH="$PATH:/Users/rock/Library/Android/sdk/platform-tools"
 export GOPATH="$HOME/work/go"
 export PATH="$PATH:$GOPATH/bin"
-export KUBECONFIG=$HOME/.kube/pentarab-config:$HOME/.kube/config:$KUBECONFIG
 
 # java env settings
 export PATH="$HOME/.jenv/bin:$PATH"
