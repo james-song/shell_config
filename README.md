@@ -1,15 +1,13 @@
-James Song Base settings for Mac
-=====================================
+## install homebrew
+	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-It contains Base settings used by James song. How to install it is:
+## zsh, pure install
+	brew install zsh
+	brew install pure
 
-- brew install zsh
-- curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
-- https://github.com/sindresorhus/pure#install
-- git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
-- git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-- curl -L https://github.com/hbin/top-programming-fonts/raw/master/install.sh | bash
+## oh-my-zsh
+	curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+	git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
 
-- https://github.com/sindresorhus/iterm2-snazzy
-
-- ./install.sh
+## iterm2 color
+	https://github.com/sindresorhus/iterm2-snazzy
