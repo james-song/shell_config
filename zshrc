@@ -70,7 +70,7 @@ HIST_STAMPS="%F %T"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(zsh-syntax-highlighting zsh-autosuggestions git-prompt)
+plugins=(zsh-syntax-highlighting zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -127,8 +127,13 @@ alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
 ## Load Angular CLI autocompletion.
-source <(ng completion script)
+# source <(ng completion script)
 
-export ANDROID_HOME="/Users/rock/Library/Android/sdk"
-export ANDROID_SDK_ROOT=$ANDROID_HOME
-export ANDROID_HOME="$PATH:/Users/rock/Library/Android/sdk/platform-tools"
+# export ANDROID_HOME="/Users/rock/Library/Android/sdk"
+# export ANDROID_SDK_ROOT=$ANDROID_HOME
+# export ANDROID_HOME="$PATH:/Users/rock/Library/Android/sdk/platform-tools"
+
+## pure
+fpath+=("$(brew --prefix)/share/zsh/site-functions")
+autoload -U promptinit; promptinit
+prompt pure
